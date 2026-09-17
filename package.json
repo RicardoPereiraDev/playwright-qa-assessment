@@ -1,0 +1,27 @@
+{
+  "name": "technical-assessment",
+  "version": "1.0.0",
+  "description": "QA Automation Engineer technical assessment",
+  "private": true,
+
+  "scripts": {
+    "test": "playwright test",
+    "test:ui": "playwright test --project=ui",
+    "test:api": "playwright test --project=api",
+    "test:headed": "playwright test --headed",
+    "report": "playwright show-report",
+    "clean": "rmdir /s /q playwright-report test-results"
+  },
+
+  "engines": {
+    "node": ">=20",
+    "npm": ">=10"
+  },
+
+  "devDependencies": {
+    "@playwright/test": "^1.63.0",
+    "@types/node": "^26.5.1",
+    "ajv": "^8.20.0",
+    "typescript": "^7.0.2"
+  }
+}
