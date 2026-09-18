@@ -37,6 +37,9 @@ test.describe('Scenario 4 - Behavioural consistency across personas', () => {
       const prices = await cartPage.getProductPrices();
       const images = await cartPage.getProductImageSources();
 
+      console.log('IMAGES:', images);
+      console.log('TOTAL IMAGES:', images.length);
+
       expect(names).toContain('Sauce Labs Backpack');
       expect(prices).toHaveLength(1);
 
